@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+@import url(./default.css);
+
+:root{
+    --blue: #223fe8;
+    --red: #ff003c;
+    --yellow: #ffff00;
+    --green: #2eeb7d;
+    --box-shadow: 0 2px 5px 1px #403c4329; 
+}
+
+*{
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: .5rem;
+    gap: 1rem;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    box-shadow: var(--box-shadow);
+    background-color: white;
+    z-index: 1000;
+}
+
+nav .active-tab{
+    border-bottom: 2px solid var(--green);
+    color: var(--blue);    
+    width: fit-content;
+    padding-bottom: 2px;
+}
+@media screen and (max-width: 768px){
+ nav{
+    grid-template-columns: 1fr auto;
+ }   
+}
+@media screen and (min-width: 768px){
+    nav ul{
+        margin: 0px auto;
+    }
+}
+.nav-left{
+    display: grid;;
+    align-items: center;
+}
+.logo-container{
+    display: grid;
+    align-items: center;
+}
+
+.logo-container img{
+    height: 2rem;
+}
+
+.nav-right{
+    display: grid;
+    align-items: center;
+}
+.nav-right ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: fit-content;
+    align-items: center;
+}
+
+.nav-right li{
+    font-family: nunito;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.nav-right li i{
+    font-size: medium;
+}
+
+header{
+    padding: 1rem;
+    padding-top: 50px;
+}
+
+#content{
+    padding: 1rem;
+}
+
+#content img{
+    display: block;
+    margin: 3px auto;
+    width: 100%;
+    max-width: 90vw;
+}
+.content-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+}
+.content-card{
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin: 10px auto;
+    width: 400px;
+    max-width: 85vw;
+}
+
+.c-card-img{
+    width: 100%;
+    max-height: 40vh;
+    overflow: hidden;
+}

@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+@import url(../icons/css/all.min.css);
+
+@font-face {
+    font-family: neutra;
+    src: url(../fonts/NeutraText.otf);
+}
+
+@font-face {
+    font-family: rubik;
+    src: url(../fonts/rubik.ttf);
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/nunito.ttf);
+}
+
+@font-face {
+    font-family: caveat;
+    src: url(../fonts/caveat.ttf);
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(../fonts/quicksand.ttf);
+}
+:root{
+    --color1: #223fe8;
+    --color2: #ff003c;
+    --color3: rgb(255, 255, 0);
+    --color4: #2eeb7d;
+}
+
+*{
+    font-family: quicksand;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: rubik;
+}
+
+p, .read{
+    font-family: neutra;
+}
+
+.hand, .notes{
+    font-family: caveat;
+}
+
+a, button, label, input, form, legend, textarea, fieldset, select, option{
+    font-family: nunito;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    max-width: 99vw;
+    max-height: 90vh;
+}
