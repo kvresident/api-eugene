@@ -1,31 +1,14 @@
 @charset "utf-8";
 
-@import url(../icons/css/all.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
 
 @font-face {
     font-family: neutra;
     src: url(../fonts/NeutraText.otf);
 }
 
-@font-face {
-    font-family: rubik;
-    src: url(../fonts/rubik.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Nunito:wght@200&family=Quicksand:wght@400;500;600&family=Rubik:wght@300&display=swap');
 
-@font-face {
-    font-family: nunito;
-    src: url(../fonts/nunito.ttf);
-}
-
-@font-face {
-    font-family: caveat;
-    src: url(../fonts/caveat.ttf);
-}
-
-@font-face {
-    font-family: quicksand;
-    src: url(../fonts/quicksand.ttf);
-}
 :root{
     --color1: #223fe8;
     --color2: #ff003c;
